@@ -1,0 +1,216 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		DE11625B1549E63600EB77E6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DE11625C1549E63600EB77E6 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DE1162681549E64800EB77E6 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		DE1162501549E63600EB77E6 = {
+			isa = PBXGroup;
+			children = (
+				DE11625A1549E63600EB77E6 /* TimerV2 */,
+			);
+			sourceTree = "<group>";
+		};
+		DE11625A1549E63600EB77E6 /* TimerV2 */ = {
+			isa = PBXGroup;
+			children = (
+				DE11625B1549E63600EB77E6 /* main.c */,
+				DE1162681549E64800EB77E6 /* main.h */,
+				DE11625C1549E63600EB77E6 /* Makefile */,
+			);
+			path = TimerV2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		DE1162571549E63600EB77E6 /* build */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "all -C $(PROJECT)";
+			buildConfigurationList = DE11625F1549E63600EB77E6 /* Build configuration list for PBXLegacyTarget "build" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = build;
+			passBuildSettingsInEnvironment = 1;
+			productName = build;
+		};
+		DE1162581549E63600EB77E6 /* fuse */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "fuse -C $(PROJECT)";
+			buildConfigurationList = DE1162621549E63600EB77E6 /* Build configuration list for PBXLegacyTarget "fuse" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = fuse;
+			passBuildSettingsInEnvironment = 1;
+			productName = fuse;
+		};
+		DE1162591549E63600EB77E6 /* flash */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "flash -C $(PROJECT)";
+			buildConfigurationList = DE1162651549E63600EB77E6 /* Build configuration list for PBXLegacyTarget "flash" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = flash;
+			passBuildSettingsInEnvironment = 1;
+			productName = flash;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		DE1162521549E63600EB77E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DE1162551549E63600EB77E6 /* Build configuration list for PBXProject "TimerV2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DE1162501549E63600EB77E6;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE1162571549E63600EB77E6 /* build */,
+				DE1162581549E63600EB77E6 /* fuse */,
+				DE1162591549E63600EB77E6 /* flash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		DE11625D1549E63600EB77E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "$(PATH):/usr/local/CrossPack-AVR/bin";
+			};
+			name = Debug;
+		};
+		DE11625E1549E63600EB77E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "$(PATH):/usr/local/CrossPack-AVR/bin";
+			};
+			name = Release;
+		};
+		DE1162601549E63600EB77E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DE1162611549E63600EB77E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DE1162631549E63600EB77E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DE1162641549E63600EB77E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		DE1162661549E63600EB77E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DE1162671549E63600EB77E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE1162551549E63600EB77E6 /* Build configuration list for PBXProject "TimerV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11625D1549E63600EB77E6 /* Debug */,
+				DE11625E1549E63600EB77E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE11625F1549E63600EB77E6 /* Build configuration list for PBXLegacyTarget "build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1162601549E63600EB77E6 /* Debug */,
+				DE1162611549E63600EB77E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DE1162621549E63600EB77E6 /* Build configuration list for PBXLegacyTarget "fuse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1162631549E63600EB77E6 /* Debug */,
+				DE1162641549E63600EB77E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DE1162651549E63600EB77E6 /* Build configuration list for PBXLegacyTarget "flash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1162661549E63600EB77E6 /* Debug */,
+				DE1162671549E63600EB77E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE1162521549E63600EB77E6 /* Project object */;
+}
